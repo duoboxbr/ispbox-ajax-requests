@@ -17,7 +17,13 @@ $curl->setBasicAuthentication($conf->username, $conf->password);
 $curl->post('/clientes/index',[
     'sidx' => 'id', // obrigatório informar pois caso contrário a pesquisa por id retorna um header location
     'servico_internet' => 1, // retorna somente os resultados com serviço de Internet ou telefone ativo
-    'id' => '2801' // id do cliente
+    'id' => '2801', // id do cliente,
+    'tipo_servico' => 'TODOS',
+    'revendas_id' => -1,
+    'vendedor_id' => -1,
+    'pontos_autenticacao_pppoe_id' => -1,
+    'tipo_vencimento' => 100,
+    'forma_cobranca' => 'TODOS'
 ]);
 echo 'Response:' . "\n";
 var_dump($curl->response);

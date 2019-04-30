@@ -9,7 +9,7 @@ $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
 $curl->setBasicAuthentication($conf->username, $conf->password);
 $curl->post('/clientes/index',[
     'servico_internet' => 1, // retorna somente os resultados com serviço de Internet ou telefone ativo
-    'email' => 'email@hotmail.com',
+    'cpf' => '044.347.899-61',
     'tipo_servico' => 'TODOS',
     'revendas_id' => -1,
     'vendedor_id' => -1,

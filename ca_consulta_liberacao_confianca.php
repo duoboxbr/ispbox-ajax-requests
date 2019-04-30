@@ -7,9 +7,8 @@ $conf = require('conf.php');
 $curl = new Curl($conf->ca_url);
 $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
 $curl->setBasicAuthentication($conf->ca_login, $conf->ca_senha);
-$curl->post('/clientes/index',[
-    'servico_internet' => 1, // retorna somente os resultados com serviço de Internet ou telefone ativo
-    'email' => 'email@hotmail.com'
+$curl->post('/boletos/index?json',[ // se o cliente tiver mais de um serviço vc pode passar o id na url após o index: /boletos/index/ID_DO_SERVICO?json
+
 ]);
 echo 'Response:' . "\n";
 var_dump($curl->response);

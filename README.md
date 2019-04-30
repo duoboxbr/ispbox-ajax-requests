@@ -1,0 +1,1 @@
+* Instalar/atualizar os pacotes com composer update
