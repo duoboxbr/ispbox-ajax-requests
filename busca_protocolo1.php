@@ -12,7 +12,7 @@ $curl->setBasicAuthentication($conf->username, $conf->password);
  * ex: /atendimentos/visualizar/55?json
  * ou
  * /atendimentos/visualizar/ANO_PROTOCOLO/NUMERO_PROTOCOLO
- * /atendimentos/visualizar/2019/334
+ * /atendimentos/visualizar/2019/334?json
  */
 $curl->get('/atendimentos/visualizar/55?json');
 echo 'Response:' . "\n";
