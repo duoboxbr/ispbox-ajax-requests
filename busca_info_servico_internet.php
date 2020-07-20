@@ -5,10 +5,10 @@ use \Curl\Curl;
 
 $conf = require('conf.php');
 $curl = new Curl($conf->admin_url);
-$curl->setBasicAuthentication($conf->username, $conf->password);
 $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
-$curl->post('/boletos/enviar_sms',[
-    'id' => 88
+$curl->setBasicAuthentication($conf->username, $conf->password);
+$curl->post('/clientes_internet/buscainfo',[
+    'internetid' => 8342
 ]);
 echo 'Response:' . "\n";
 var_dump($curl->response);

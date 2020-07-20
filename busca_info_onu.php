@@ -5,10 +5,11 @@ use \Curl\Curl;
 
 $conf = require('conf.php');
 $curl = new Curl($conf->admin_url);
-$curl->setBasicAuthentication($conf->username, $conf->password);
 $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
-$curl->post('/boletos/enviar_sms',[
-    'id' => 88
-]);
+$curl->setBasicAuthentication($conf->username, $conf->password);
+/**
+ * /fibraoptica/onu_info/ID_DA_ONU/?json
+ */
+$curl->get('/fibraoptica/onu_info/63/?json');
 echo 'Response:' . "\n";
 var_dump($curl->response);
