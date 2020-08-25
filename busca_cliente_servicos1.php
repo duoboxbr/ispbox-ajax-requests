@@ -14,10 +14,9 @@ $curl->setBasicAuthentication($conf->username, $conf->password);
  * tipo_servico = INTERNET para ter apenas o resultado dos servicos de Internet
  * tipo_servico = TELEFONE para ter apenas o resultado dos servicos de telefone
  */
-$curl->post('/clientes/index',[
-    'sidx' => 'id', // obrigatório informar pois caso contrário a pesquisa por id retorna um header location
+$curl->post('/clientes/index?json',[
     'servico_internet' => 1, // retorna somente os resultados com serviço de Internet ou telefone ativo
-    'id' => '2801', // id do cliente,
+    'id' => '1565', // id do cliente,
     'tipo_servico' => 'TODOS',
     'revendas_id' => -1,
     'vendedor_id' => -1,
