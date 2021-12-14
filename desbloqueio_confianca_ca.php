@@ -13,3 +13,19 @@ $curl->post('/boletos/desbloqueiotemporario',[
 ]);
 echo 'Response:' . "\n";
 var_dump($curl->response);
+
+/*
+Respostas:
+
+Erro: 0
+Desbloqueio executado com sucesso.
+
+Erro: 1
+Você já excedeu a quantidade de desbloqueios permitidos no mês.
+
+Erro: 2
+Seu serviço já se encontra desbloqueado.
+
+Erro: 3
+Recurso desabilitado.
+*/
