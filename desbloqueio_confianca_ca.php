@@ -28,4 +28,11 @@ Seu serviço já se encontra desbloqueado.
 
 Erro: 3
 Recurso desabilitado.
+
+Erro: 4
+Sem permissão para o serviço de internet informado.
+
+Erro: 5
+Serviço de internet não localizado.
+
 */
