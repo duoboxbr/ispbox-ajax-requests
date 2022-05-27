@@ -7,7 +7,7 @@ $conf = require('conf.php');
 $curl = new Curl($conf->admin_url);
 $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
 $curl->setBasicAuthentication($conf->username, $conf->password);
-// URL /clientes/centraL_assiante/ID_DO_CLIENTE?json
+// URL /clientes/central_assinante/ID_DO_CLIENTE?json
 $curl->get('/clientes/central_assinante/3226?json');
 echo 'Response:' . "\n";
 var_dump($curl->response);
