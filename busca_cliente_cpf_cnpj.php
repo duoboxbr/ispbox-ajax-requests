@@ -9,7 +9,7 @@ $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
 $curl->setBasicAuthentication($conf->username, $conf->password);
 $curl->post('/clientes/index?json',[
     'servico_internet' => 1, // retorna somente os resultados com serviço de Internet ou telefone ativo
-    'cnpj' => '69402345000330',
+    'cnpj' => '13631358000164',
     'tipo_servico' => 'INTERNET',
     'revendas_id' => -1,
     'vendedor_id' => -1,
