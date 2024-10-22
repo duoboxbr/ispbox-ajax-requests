@@ -1,8 +1,8 @@
 <?php
 $conf = new \stdClass();
-$conf->username = 'demo';
-$conf->password = 'demo';
-$conf->admin_url = 'https://demo4.ispbox.com.br';
+$conf->username = 'manutencao';
+$conf->password = 'teste';
+$conf->admin_url = 'https://dev3.chrisbckr.ispbox.com.br';
 $conf->ca_url = 'https://central.demo-dev.ispbox.com.br';
 $conf->ca_login = '06658641676';
 $conf->ca_senha = 'teste123';
